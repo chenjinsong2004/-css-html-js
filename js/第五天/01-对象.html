@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        let cjs = {
+            uname: '陈劲松',
+            age: 18,
+            gender: '男'
+        }
+        //改
+        cjs.gender = '女'
+        //增
+        cjs.happy = '玩游戏'
+        //删
+        delete cjs.age
+        //两种调用方法
+        console.log(cjs.uname)
+        console.log(cjs['age'])
+        let obj = {
+            uname: '刘德华',
+            //方法
+            song: function(x, y){
+                let sum = x + y
+                document.write(sum)
+                console.log('冰雨')
+            }
+        }
+        obj.song(1, 2)
+     </script>
+</body>
+</html>

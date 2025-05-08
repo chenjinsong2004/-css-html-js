@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students = [
+            {name: '小明', age: 18, gender: '男'},
+            {name: '小红', age: 18, gender: '女'},
+            {name: '小刚', age: 18, gender: '男'},
+            {name: '小梁', age: 18, gender: '男'}
+        ]
+        for(let i = 0; i < students.length; i++){
+            console.log(students[i].name);
+            console.log(students[i].age);
+        }
+        let arr = [3, 4, 5, 6]
+        for(let k in arr){
+            console.log(k)//数组下标，但是字符串类型
+            console.log(arr[k])
+        }
+        let cjs = {
+            uname: '陈劲松',
+            age: 18,
+            gender: '男'
+        }
+        for(let k in cjs){
+            console.log(k)//得到的是属性名
+            console.log(cjs[k]);
+        }
+    </script>
+</body>
+</html>

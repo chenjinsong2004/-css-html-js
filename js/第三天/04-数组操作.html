@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ['踩踩踩', '嘻嘻嘻']
+        arr.push('杀杀杀', '谢谢谢')
+        arr.unshift('不不不', '日日日')
+        document.write(`${arr}<br>`)
+        let arr1 = [1, 23, 3, 4, 53, 44]
+        let arrNew = []
+        for(let i = 0; i < arr1.length; i++){
+            if(arr1[i]>10){
+                arrNew.push(arr1[i])
+            }
+        }
+        console.log(arrNew)
+        arr.pop//删除最后一个元素
+        arr.shift//删除第一个元素
+        arr.splice(1,1)//指从索引号一的位置开始删，只删一个
+        document.write(arr)
+    </script>
+</body>
+</html>

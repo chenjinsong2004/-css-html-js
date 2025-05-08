@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getSum(n, m){
+            
+            console.log(num1 + num2)
+        }
+        let num1 = +prompt('请输入第一个数')
+        let num2 = +prompt('请输入第二个数')
+        //实参可以是变量
+        getSum(num1, num2)
+        //start和end相当于形参
+        function Sum(start, end){
+            let num1 = 0
+            let sum = 0
+            for(let i = start; i<= end; i++){
+                sum+=i
+            }
+            console.log(sum)
+        }
+        //小括号里的数相当于实参
+        Sum(1, 50)
+        function getArrSum(arr = []){
+            let sum = 0
+            for(let i = 0; i < arr.length; i++){
+                sum +=arr[i]
+            }
+            document.write(sum)
+        }
+        getArrSum([33,44,55,66])
+    </script>
+</body>
+</html>

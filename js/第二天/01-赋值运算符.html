@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = 1
+        number = number + 1
+        number+=1
+        number++
+        let num = prompt('请输入一个数:')
+        if(num % 4 === 0 && num % 100 !== 0){
+            alert(true)
+        }
+        console.log(number)//4 
+        console.log(++number + 1)//6
+        console.log(number++ + 1)//6
+        // 双等于号只判断值，三等于号值与数据类型都要一样
+        console.log(2 == '2')
+        console.log(2 === '2')
+    </script>
+</body>
+</html>
