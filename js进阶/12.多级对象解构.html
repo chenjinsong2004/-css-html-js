@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const msg = {
+            code:200,
+            msg:'获取新闻列表成功',
+            data:[
+                {
+                    id:1,
+                    title:'5G商用',
+                    count:58
+                },
+                {
+                    id:2,
+                    title:'头条速浪',
+                    count:40
+                }
+            ]
+        }
+        // const {data} = msg
+        // console.log(data);
+
+        //只解构{data}
+        function fn({data}){
+            
+            console.log(data);
+        }
+        fn(msg)
+
+        function render({data:myData}){
+            console.log(myData);
+            
+        }
+        render(msg)
+    </script>
+</body>
+</html>

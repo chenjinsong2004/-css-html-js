@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        // const arr = ['red','blue','green']
+        // const re = arr.find(function(item){
+        //     return item === 'blue'
+        // })
+        // console.log(re);
+
+
+        const arr = [
+            {
+                name:'xiaomi',
+                price:1999
+            },
+            {
+                name:'huawei',
+                price:3999
+            }
+        ]
+        //这种ES6的写法返回时不需要return
+        const mi = arr.find(item => item.name === 'xiaomi')
+        console.log(mi);
+        
+
+        const arr1 = [10,20,30]
+        const flag = arr1.every(item => item >= 10)
+        console.log(flag);
+        
+        const div = document.querySelector('div')
+        const spec = {size:'40cm*40cm',color:'黑色'}
+        //获取spec中的属性值 返回一个数组
+        // console.log(Object.values(spec));
+        //join把数组转化成字符串
+        div.innerHTML = Object.values(spec).join('/')
+
+
+        //把伪数组转化成真数组
+        const lis = document.querySelectorAll('ul li')
+        console.log(lis);
+        const liss = Array.from(lis)
+        liss.pop()
+        console.log(liss);
+        
+    </script>
+</body>
+</html>

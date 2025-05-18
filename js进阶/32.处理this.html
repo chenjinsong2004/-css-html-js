@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>发送短信</button>
+    <script>
+        //普通函数谁调用就指向谁
+        //箭头函数没有this 绑定最近作用域的this
+
+        //改变this指向
+        const obj = {
+            name:'pink'
+        }
+        function fn(x,y){
+            console.log(this);
+            console.log(x+y);
+        }
+
+        //call改变this指向,将this指向obj
+        // fn.call(obj,1,2)
+
+        //apply改变this指向，第二个参数必须写数组
+        // fn.apply(obj,[1,2])
+
+        const arr = [1,2,3,4]
+        const max = Math.max.apply(Math,arr)
+        console.log(max);
+        console.log(Math.max(...arr));
+        
+
+        //bind()可以改变this指向，不会立马调用函数
+        const fun = fn.bind(obj)
+        fun()
+
+        const btn = document.querySelector('button')
+        btn.addEventListener('click',function(){
+            this.disabled = true
+            setTimeout(function(){
+                this.disabled = false
+            }.bind(this),2000)
+        })
+    </script>
+</body>
+</html>

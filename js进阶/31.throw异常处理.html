@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>123</p>
+     <script>
+        // function fn(x,y){
+        //     if(!x || !y){
+        //         //抛异常
+        //         throw new Error('没有参数传递过来')
+        //     }
+        //     return x+y
+        // }
+        // fn()
+
+        function fn(){
+            try{
+                const p = document.querySelector('.p')
+                p.style.color = 'red'
+            }catch(err){
+                console.log(err.message)
+                throw new Error('你看看')
+                return
+            }finally{
+                alert('6')
+            }
+            console.log('11');
+            
+        }
+        fn()
+     </script>
+</body>
+</html>

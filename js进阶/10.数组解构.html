@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        const arr = [100, 60, 80]
+        const [max, min, avg] = arr
+        console.log(max);
+        
+
+        //两种加分号的两种情况
+        //1.立即执行函数
+        //2.使用数组解构的时候
+        // let a = 1
+        // let b = 2;//这里必须加分号
+        // [a, b] = [b, a]
+        // console.log(a, b);
+        
+
+        // const [a,b,c,d] = [1,2,3]
+        // console.log(d);
+        
+        const [a,,c,d] = [1,2,3,4]
+        console.log(d);
+
+        //二维数组
+        const arr1 = [1,2,[3,4]]
+        console.log(arr1[2]);
+        
+     </script>
+</body>
+</html>

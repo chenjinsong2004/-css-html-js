@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //对象解构
+        const obj = {
+            uname:'cjs',
+            age:18
+        }
+
+        const {uname,age} = obj
+        console.log(age);
+        
+        //解构语法
+        const {uname1:name,age1} = {uname1:'cjs',age1:'18'}
+        console.log(name);
+        
+
+        //多级对象解构
+        const pig = {
+            name1:'佩奇',
+            family:{
+                mother:'mm',
+                father:'bb'
+            },
+            age2:18
+        }
+        const {name1,family:{mother,family},age2} = pig
+        console.log(name1);
+        console.log(age2);
+        console.log(mother);
+        
+    </script>
+</body>
+</html>

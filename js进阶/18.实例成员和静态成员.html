@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Pig(name){
+            this.name = name
+        }
+        const peiqi = new Pig('peiqi')
+        peiqi.name = 'xiaozhu'//实例属性
+        peiqi.say = ()=>{       //实例方法
+            console.log('hi');  
+        } 
+        console.log(peiqi);
+        peiqi.say()             //调用
+        
+
+        //静态成员
+        function Pig1(name1){
+            this.name1 = name1
+        }
+        Pig1.eyes = 2 //静态属性
+        console.log(Pig1.eyes);
+        
+        Pig1.say = function(){    //静态方法
+            console.log(this);
+            
+        }
+        Pig1.say()
+    </script>
+</body>
+</html>

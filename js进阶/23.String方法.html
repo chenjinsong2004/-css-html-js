@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        //split 把字符串转化为数组 和join作用相反
+        const str = 'ping,cjs'
+        const arr = str.split(',')
+        console.log(arr);
+        const str1 = '2025-5-11'
+        const arr1 = str1.split('-')
+        console.log(arr1);
+        
+
+        //字符串截取 substring(3,5) 从三取到五后面的五不截取
+        const str2 = '今天做核算了'
+        console.log(str2.substring(3,5))
+        
+
+        //startsWith 判断是不是以某个字符开头
+        const str3 = 'cjs正在学习'
+        console.log(str3.startsWith('cjs'));
+        
+
+        //includes 方法判断一个字符串是否包含在另一个字符串中
+        const str4 = 'lxy正在学习'
+        console.log(str4.includes('lxy',1));//后面1表示从哪个下标开始
+
+
+        //练习一下
+        const gift = '50g的茶叶,清洗器'
+         console.log(gift.split(','));
+        const arr2 = gift.split(',').map(item => `<span>[赠品]${item}</span><br>` ).join('')
+        document.querySelector("div").innerHTML = arr2
+    </script>
+</body>
+</html>
