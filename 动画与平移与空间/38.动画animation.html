@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            /* linear匀速 */
+            animation: change 2s linear;
+            /* steps分布动画，配合精灵图使用 3表示分三步 */
+            animation: change 2s steps(3);
+            /* 如果有两个时间，第一个是动画时长，第二个是延迟时间 */
+            animation: change 2s 3s;
+            /* 后面的三表示播放几次 */
+            animation: change 2s 3;
+            /* infinite无限的循环 alternate轮流的*/
+            animation: change 2s infinite alternate;
+            /* forwards向前方 让动画停在结束位置 */
+            animation: change 2s forwards;
+        }
+        /* 这个方法只可以定义两个 */
+        @keyframes change{
+            from{
+                width: 200px;
+            }to{
+                width: 800px;
+            }
+        } 
+         /* 这里的百分比指的是动画时长
+        /* @keyframes change {
+            0%{
+                width: 200px;
+                height: 100px;
+            }
+            20%{
+                width: 300px;
+                height: 300px;
+            }
+            100%{
+                width: 800px;
+                height: 500px;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

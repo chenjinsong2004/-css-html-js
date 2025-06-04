@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .father{
+            display: flex;
+            width: 1366px;
+            height: 600px;
+            background-color: pink;
+            overflow: hidden;
+            
+            margin: 0 auto;
+        }
+        .father:hover .left{
+            transform: translate(-100%, 0);
+        }
+        .father:hover .right{
+            transform: translate(100%, 0);
+        }
+        .father .left, 
+        .father .right{
+            width: 50%;
+            height: 600px;
+            background-color: aqua;
+            transition: all 0.5s;
+        }
+        .father .right{
+            /* right表示取到精灵图右边的图片 */
+            background-position: right 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

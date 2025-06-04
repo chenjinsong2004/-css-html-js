@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            background: url(./images1/f1_1.jpg) no-repeat center 0/cover;
+            
+        }
+        .text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .cloud img{
+            position: absolute;
+            left: 50%;
+        }
+        .cloud img:nth-child(1){
+            margin-left: -300px;
+            top: 30px;
+            animation: cloud 1s infinite alternate linear;
+        }
+        .cloud img:nth-child(2){
+            margin-left: 350px;
+            top: 70px;
+            animation: cloud 1s 0.4s infinite alternate linear;
+        }
+        .cloud img:nth-child(3){
+            margin-left: -600px;
+            top: 200px;
+            animation: cloud 1s 0.6 s infinite alternate linear;
+        }
+        .text img{
+            display: block;
+            transform: scale(0.1);
+            animation: big 1s forwards;
+        }
+        @keyframes big {
+            40%{
+                transform: scale(1.2);
+            }
+            75%{
+                transform: scale(0.8);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        @keyframes cloud {
+            100%{
+                transform: translateX(30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cloud">
+        <img src="./images1/yun1.png" alt="">
+        <img src="./images1/yun2.png" alt="">
+        <img src="./images1/yun3.png" alt="">
+    </div>
+    <div class="text">
+        <img src="./images1/font1.png" alt="">
+    </div>
+</body>
+</html>

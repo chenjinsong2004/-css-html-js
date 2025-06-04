@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 视距属性只能给父级 */
+        .father{
+            /* 给平面增加角度就可以看到Z轴的移动效果 */
+            perspective: 800px;
+        }
+        .son{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: all 0.5s;
+            margin: 100px auto;
+        }
+        .son:hover{
+            /* 因为电脑是平面，所以无法看到Z轴的移动效果 */
+            transform: translate3d(100px, 200px, 300px) ;
+            transform: translateZ(-300px);
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

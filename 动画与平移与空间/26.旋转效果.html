@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* transform: translate(-50%, -50%); */
+            /* 改变旋转中心点 */
+            transform-origin:right bottom ;
+            width: 200px;
+            transition: all 2s;
+            border: 1px solid black
+            
+        }
+        img:hover{
+            transform: rotate(3600deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="./屏幕截图 2025-04-05 131253.png" alt="">
+</body>
+</html>
