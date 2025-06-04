@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图</title>
+    <style>
+        /* contain等比例缩放  cover会使图片覆盖背景，但可能会让图片不完整 */
+        /* div{
+            
+            background-image: url(./微信图片_20230630211721\ \(1\)\(1\).jpg);
+            background-color: #ca54b0;
+            background-repeat: no-repeat;
+            background-position:center top; 
+            background-size: contain;
+            background-size: cover;
+            background-attachment: fixed;
+        } */
+        body{
+            background-image: url(./微信图片_20230630211721\ \(1\)\(1\).jpg);
+            background-repeat: no-repeat; 
+            background-position:center top;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        p{
+            height: 1500px;
+        }
+
+        div{
+            width: 400px;
+            height: 400px;
+            background: pink url(./微信图片_20230711185607\(1\)\(1\).jpg) no-repeat center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div>div标签</div>
+    <p>1</p>
+</body>
+</html>

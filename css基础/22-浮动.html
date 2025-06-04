@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浮动会脱标,不在占用标准流的位置 */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        .product{
+            margin: 50px auto;
+            width: 1226px;
+            height: 628px;
+            background-color: pink;
+        }
+        .left{
+            float: left;
+            width: 234px;
+            height: 628px;
+            background-color: #065ce7;
+        }
+        .right{
+            float: right;
+            width: 978px;
+            height: 628px;
+            background-color: #14f018;
+        }
+        .right li{
+            float: left;
+            margin-right: 14px;
+            margin-bottom: 14px;
+            width: 234px;
+            height: 300px;
+            background-color: #d61313;
+        }
+        .right li:nth-child(4n){
+            margin-right: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product">
+        <div class="left"></div>
+        <div class="right">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        
+    </div>
+</body>
+</html>

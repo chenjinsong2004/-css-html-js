@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 继承性 与 后面覆盖前面|不同属性叠加-->
+     <!-- 优先级: 选中范围越大，优先级越低-->
+    <!-- <style>
+        body{
+            font-size: 40px;
+            color: blueviolet;
+            font-weight: 700;
+        }
+        a{
+            color: blue;
+            /* font-size: 20; */
+            font-family: 楷体;
+        }
+    </style> -->
+
+
+    <style>
+        /* id选择器 */
+        #test{
+            color: black;
+        }
+        /* 类选择器 */
+        .box{
+            color: blue;
+        }
+        /* 标签选择器 */
+        div{
+            color: blueviolet;
+        }
+        /* 通配符选择器 !important最高优先级,最好别用*/
+        *{
+            color: brown !important;
+        } 
+
+    </style>
+</head>
+<body>
+                                <!-- 行内式 -->
+    <div class="box" id="test" style="color: aquamarine;">这是div标签</div>
+    <span>span标签</span>
+    <a href="#">a超链接</a>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- display可以定义（块block 行内inline 行内块inline-block）元素 --> 
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+
+            display: inline-block;
+        }
+        .div1{
+            
+            background-color: #f20303;
+        }
+        .div2{
+            
+            background-color: #2400ed;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块元素 独占一行，可定义宽高-->
+     <div class="div1">div独占一行</div>
+     <div class="div2">div独占一行</div>
+
+     <!-- 行内元素 一行可以有多个，如果加宽高则不生效-->
+    <span>span1</span>
+    <span>sapn2</span>
+
+     <!-- 行内块元素 可以定义宽高-->
+    <img src="./屏幕截图 2025-04-05 131253.png" alt="">
+    <img src="./屏幕截图 2025-04-05 131253.png" alt="">
+</body>
+</html>

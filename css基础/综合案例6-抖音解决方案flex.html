@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        .box{
+            margin: 50px auto;
+            height: 418px;
+            width: 1200px;
+            border: 1px solid black ;
+            border-radius: 4px;
+        }
+        .box ul{
+            display: flex;
+            /* 盒子换行 */
+            flex-wrap: wrap;
+            /* 调整主轴对齐方式 */
+            justify-content: space-between;
+            /* 调整 行对齐方式 */
+            align-content: space-between;
+            padding: 90px 40px 90px 60px;
+            height: 418px;
+        }
+        .box li{
+            display: flex;
+            width: 500px;
+            height: 88px;
+            background-color: pink;
+        }
+        .box img{
+            margin-right: 15px;
+        }
+        .box h3{
+            line-height: 40px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <div>
+                    <img src="./屏幕截图 2025-04-05 131253.png" alt="">
+                </div>
+                <div>
+                    <h3>内容</h3>
+                    <p>666666666666666666</p>
+                </div>
+            </li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+</body>
+</html>

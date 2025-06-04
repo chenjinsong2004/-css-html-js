@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- div的后代span是红色的 空格-->
+    <!-- <style>
+        div span{
+            color: brown;
+        }
+    </style> -->
+
+
+    <!-- div的子代span是红色的 大于号-->
+    <!-- <style>
+        div>span{
+            color: brown;
+        }
+    </style> -->
+
+
+    <!-- 并集选择器 -->
+    <!-- <style>
+        div,p,span{
+            color: rgb(221, 139, 39);
+        }
+    </style> -->
+
+
+     <!-- 交集选择器 既有p标签又有box才生效-->
+    <!-- <style>
+        p.box{
+            color: blue;
+        }
+    </style> -->
+
+
+    <!-- 伪类选择器 关键词：hover-->
+     <!-- <style>
+        a:hover{
+            color: blueviolet;
+        }
+        .box:hover{
+            color: blanchedalmond;
+        }
+     </style> -->
+
+
+     <!-- 伪类超链接 link是默认 visited是访问 hover是鼠标放上去时 active是点击时 hover是常用的-->
+    <style>
+        a:link{
+            color: brown;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            color: blueviolet;
+        }
+        a:active{
+            color: blanchedalmond;
+        }
+    </style>
+
+</head>
+<body>
+    <span>span标签</span>
+    <span>span标签</span>
+    <div>div标签</div>
+    <p class="box">有class的p标签</p>
+    <p>p标签</p>
+    <a href="#">这是a超链接</a>
+    <div>
+        <span>儿子span标签</span>
+        <p>
+            <span>孙子span标签</span>
+        </p>
+    </div>
+</body>
+</html>
